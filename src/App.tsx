@@ -26,7 +26,8 @@ function App() {
 	if (timeframe === "Weekly") timef = "Week";
 	if (timeframe === "Monthly") timef = "Month";
 
-	const time = timeframe.toLowerCase();
+	const time: keyof CardProps["timeframes"] =
+		timeframe.toLowerCase() as keyof CardProps["timeframes"];
 
 	return (
 		<main className="grid main-grid">
