@@ -40,6 +40,7 @@ body {
 
 .main-grid {
 	margin: auto;
+	padding-block: 2rem;
 	width: min-content;
 	gap: 1.5rem;
 	grid-template-areas:

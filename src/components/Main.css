@@ -35,7 +35,6 @@
 }
 
 .timeframe-selector {
-	/* margin-top: auto; */
 	padding: var(--card-padding);
 	height: min-content;
 }

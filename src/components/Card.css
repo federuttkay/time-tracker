@@ -23,10 +23,6 @@
 	cursor: pointer;
 }
 
-.card-content:hover {
-	background-color: var(--dark-blue-lighter);
-}
-
 .card-title {
 	font-size: inherit;
 	font-weight: 400;
@@ -46,7 +42,7 @@
 	font-weight: 300;
 	margin-block: 0;
 }
-/* el prev tiene block .5rem y el actual top .5rem */
+
 .card-previous-time {
 	margin: 0;
 	font-size: 0.9rem;
@@ -89,6 +85,9 @@
 @media screen and (width > 1150px) {
 	.card {
 		width: 255px;
+	}
+	.card-content:hover {
+		background-color: var(--dark-blue-lighter);
 	}
 	.card-current-time {
 		font-size: 3.5rem;
