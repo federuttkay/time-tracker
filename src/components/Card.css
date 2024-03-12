@@ -1,0 +1,104 @@
+.card {
+	width: min(500px, 94vw);
+	border-radius: var(--card-radius) var(--card-radius) 30% 30%;
+	position: relative;
+}
+
+.card-logo {
+	height: 2.8125rem;
+	overflow: hidden;
+}
+
+.card-logo img {
+	margin-left: auto;
+	margin-right: 1rem;
+	transform: translateY(6px);
+}
+
+.card-content {
+	background-color: var(--dark-blue);
+	border-radius: var(--card-radius);
+	padding: var(--card-padding);
+	font-weight: 300;
+	cursor: pointer;
+}
+
+.card-content:hover {
+	background-color: var(--dark-blue-lighter);
+}
+
+.card-title {
+	font-size: inherit;
+	font-weight: 400;
+	margin: 0;
+}
+
+.card-ellipsis {
+	height: min-content;
+}
+
+.time {
+	margin-top: 0.5rem;
+}
+
+.card-current-time {
+	font-size: 2rem;
+	font-weight: 300;
+	margin-block: 0;
+}
+/* el prev tiene block .5rem y el actual top .5rem */
+.card-previous-time {
+	margin: 0;
+	font-size: 0.9rem;
+	color: var(--pale-blue);
+}
+
+.flex {
+	display: flex;
+	align-items: center;
+}
+
+.flex-between {
+	justify-content: space-between;
+}
+
+.work {
+	background-color: var(--light-red);
+}
+
+.play {
+	background-color: var(--soft-blue);
+}
+
+.study {
+	background-color: var(--coral);
+}
+
+.excercise {
+	background-color: var(--lime-green);
+}
+
+.social {
+	background-color: var(--violet);
+}
+
+.self-care {
+	background-color: var(--soft-orange);
+}
+
+@media screen and (width > 1150px) {
+	.card {
+		width: 255px;
+	}
+	.card-current-time {
+		font-size: 3.5rem;
+		margin-top: 1.5rem;
+		margin-bottom: 0.5rem;
+	}
+	.card-previous-time {
+		margin-bottom: 0.25rem;
+	}
+	.time {
+		display: block;
+	}
+}

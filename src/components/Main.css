@@ -1,0 +1,81 @@
+.main-card {
+	background-color: var(--dark-blue);
+	border-radius: var(--card-radius);
+	height: 100%;
+	grid-template-rows: 1fr min-content;
+}
+
+.user {
+	background-color: var(--blue);
+	padding: var(--card-padding);
+	border-radius: var(--card-radius);
+}
+
+.user-image {
+	width: 5rem;
+	aspect-ratio: 1;
+	border-radius: 100%;
+	border: 3px solid white;
+	margin-bottom: 2rem;
+}
+
+.user-title {
+	font-size: 0.9rem;
+	font-weight: 300;
+	color: var(--pale-blue);
+}
+
+.user-name {
+	display: block;
+	font-size: 2.5rem;
+	font-weight: 300;
+	color: white;
+	margin-top: 0.125em;
+	line-height: 1.25;
+}
+
+.timeframe-selector {
+	/* margin-top: auto; */
+	padding: var(--card-padding);
+	height: min-content;
+}
+
+.timeframes-list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	gap: 1em;
+	font-weight: 300;
+	color: var(--desaturated-blue);
+}
+
+@media screen and (width <= 1150px) {
+	.user {
+		display: flex;
+		gap: 1.5rem;
+	}
+	.user > * {
+		margin: 0;
+	}
+	.user-image {
+		width: 4.25rem;
+	}
+	.user-name {
+		font-size: 1.5rem;
+	}
+	.user-title {
+		margin-block: auto;
+	}
+	.timeframes-list {
+		display: flex;
+		justify-content: space-between;
+	}
+}
+
+.timeframes-list > li {
+	cursor: pointer;
+}
+
+.timeframes-list > li:hover {
+	color: white;
+}

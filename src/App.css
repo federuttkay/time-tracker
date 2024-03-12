@@ -1,0 +1,96 @@
+:root {
+	box-sizing: border-box;
+	--blue: hsl(246, 80%, 60%);
+
+	--light-red: hsl(15, 100%, 70%);
+	--soft-blue: hsl(195, 74%, 62%);
+	--coral: hsl(348, 100%, 68%);
+	--lime-green: hsl(145, 58%, 55%);
+	--violet: hsl(264, 64%, 52%);
+	--soft-orange: hsl(43, 84%, 65%);
+
+	--very-dark-blue: hsl(226, 43%, 10%);
+	--dark-blue: hsl(235, 46%, 20%);
+	--dark-blue-lighter: hsl(235, 36%, 36%);
+	--desaturated-blue: hsl(235, 45%, 61%);
+	--pale-blue: hsl(236, 100%, 87%);
+
+	--card-radius: 1rem;
+	--card-padding: 1.75rem;
+}
+
+#root {
+	height: 100%;
+	display: grid;
+	place-items: center;
+}
+
+body {
+	font-family: "Rubik", sans-serif;
+	color: white;
+	font-size: 1.125rem;
+	background-color: var(--very-dark-blue);
+	height: 100dvh;
+	margin: 0;
+}
+
+.grid {
+	display: grid;
+}
+
+.main-grid {
+	margin: auto;
+	width: min-content;
+	gap: 1.5rem;
+	grid-template-areas:
+		"main-card"
+		"work-card"
+		"play-card"
+		"study-card"
+		"excercise-card"
+		"social-card"
+		"self-care-card";
+}
+
+@media screen and (width > 1150px) {
+	.main-grid {
+		width: min-content;
+		gap: 2rem;
+		grid-template-areas:
+			"main-card work-card      play-card   study-card"
+			"main-card excercise-card social-card self-care-card";
+	}
+}
+
+.main-grid > * {
+	width: min-content;
+	height: min-content;
+}
+
+.main-card {
+	grid-area: main-card;
+}
+
+.work-card {
+	grid-area: work-card;
+}
+
+.play-card {
+	grid-area: play-card;
+}
+
+.study-card {
+	grid-area: study-card;
+}
+
+.excercise-card {
+	grid-area: excercise-card;
+}
+
+.social-card {
+	grid-area: social-card;
+}
+
+.self-care-card {
+	grid-area: self-care-card;
+}
